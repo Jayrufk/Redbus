@@ -1,0 +1,18 @@
+/* FORCE FAQ VISIBILITY – DARK MODE FIX */
+
+:host-context(.dark-theme) h1,
+:host-context(.dark-theme) h2,
+:host-context(.dark-theme) h3,
+:host-context(.dark-theme) p,
+:host-context(.dark-theme) span,
+:host-context(.dark-theme) div {
+  color: #e5e7eb !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+:host-context(.dark-theme) .faq,
+:host-context(.dark-theme) .faq-card,
+:host-context(.dark-theme) .faq-item {
+  background-color: #020617 !important;
+}

@@ -1,0 +1,153 @@
+/* ======================================
+   GLOBAL BASE STYLES
+   ====================================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* ======================================
+   🌙 DARK MODE GLOBAL THEME
+   ====================================== */
+.dark-theme {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* ======================================
+   🌙 DARK MODE NAVBAR (HEADER FIX)
+   ====================================== */
+
+/* Override bg-white safely */
+.dark-theme nav {
+  background-color: #020617 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar text */
+.dark-theme nav p,
+.dark-theme nav span,
+.dark-theme nav a {
+  color: #e5e7eb !important;
+}
+
+/* SVG icons */
+.dark-theme nav svg {
+  fill: #e5e7eb !important;
+}
+
+/* Hover states */
+.dark-theme nav .hover\:bg-gray-100:hover {
+  background-color: #1e293b !important;
+}
+
+/* ======================================
+   🌙 DARK MODE CARDS & SECTIONS
+   ====================================== */
+.dark-theme .card,
+.dark-theme [style*="--card-bg"] {
+  background-color: #020617 !important;
+}
+
+/* ======================================
+   🌙 DARK MODE MATERIAL MENU
+   ====================================== */
+.dark-theme .mat-mdc-menu-panel {
+  background-color: #020617 !important;
+}
+
+.dark-theme .mat-mdc-menu-item {
+  color: #e5e7eb !important;
+}
+
+.dark-theme .mat-mdc-menu-item:hover {
+  background-color: #1e293b !important;
+}
+
+:root {
+  --header-bg: #f8f4f4;
+  --header-border: #000;
+}
+
+body.dark-theme {
+  --header-bg: #0f172a;
+  --header-border: #e5e7eb;
+  color: #e5e7eb;
+}
+
+
+
+
+/* ===============================
+   🌙 DARK MODE - MATERIAL DIALOG
+   =============================== */
+
+.dark-theme .cdk-overlay-pane .mat-mdc-dialog-container {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+}
+
+.dark-theme .cdk-overlay-pane .mat-mdc-dialog-title {
+  color: #e5e7eb !important;
+}
+
+.dark-theme .cdk-overlay-pane .mat-mdc-dialog-content {
+  color: #e5e7eb !important;
+}
+
+.dark-theme .cdk-overlay-pane .mat-mdc-header-cell {
+  background-color: #020617 !important;
+  color: #e5e7eb !important;
+}
+
+.dark-theme .cdk-overlay-pane .mat-mdc-cell {
+  color: #e5e7eb !important;
+}
+
+.dark-theme .cdk-overlay-pane .mat-mdc-button {
+  color: #e5e7eb !important;
+}
+
+
+/* ===== FORCE FAQ TEXT VISIBILITY (FINAL) ===== */
+
+.dark-theme .mat-mdc-expansion-panel {
+  background-color: #020617 !important;
+}
+
+.dark-theme .mat-mdc-expansion-panel-header,
+.dark-theme .mat-mdc-expansion-panel-content,
+.dark-theme .mat-mdc-expansion-panel-body {
+  background-color: #020617 !important;
+  opacity: 1 !important;
+}
+
+.dark-theme .mat-mdc-expansion-panel *,
+.dark-theme .mat-mdc-expansion-panel-header-title,
+.dark-theme .mat-mdc-expansion-panel-header-description,
+.dark-theme .mat-mdc-expansion-panel-content p,
+.dark-theme .mat-mdc-expansion-panel-content span {
+  color: #e5e7eb !important;
+  opacity: 1 !important;
+}
+
+/* PLUS / MINUS */
+.dark-theme .mat-mdc-expansion-indicator::after {
+  color: #e5e7eb !important;
+  opacity: 1 !important;
+}
+
